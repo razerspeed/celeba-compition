@@ -4,4 +4,16 @@
 
 2. docker run -p 5000:5000 -d app:api
 
+## Deploy on Heroku
 
+1. heroku login
+
+2. heroku container:login
+
+3.heroku create celeba-competition
+
+4.heroku container:push web --app celeba-competition
+
+5.heroku container:release web --app celeba-competition
+
+Thats it the app is running in https://celeba-competition.herokuapp.com
